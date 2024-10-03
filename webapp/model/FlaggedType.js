@@ -10,6 +10,7 @@ sap.ui.define([
             return value == true ? 1 : 0;
         },
         validateValue: function () {
+                return true;
         }
     });
 });

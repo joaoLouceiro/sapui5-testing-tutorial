@@ -2,11 +2,15 @@ sap.ui.define([
 	'./BaseController',
 	'sap/ui/model/json/JSONModel',
 	'../model/formatter',
-	'sap/m/library'
-], function(BaseController, JSONModel, formatter, mobileLibrary) {
+	'sap/m/library',
+	'../model/FlaggedType'
+], function(BaseController, JSONModel, formatter, mobileLibrary,FlaggedType) {
 	"use strict";
 
 	return BaseController.extend("sap.ui.demo.bulletinboard.controller.Worklist", {
+        types : {
+            flagged: new FlaggedType()
+        },
 
 		formatter: formatter,
 
